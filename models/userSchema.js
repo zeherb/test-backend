@@ -6,9 +6,8 @@ const userSchema = new Schema({
     lastName: { type: String, required: true, trim: true },
     email: { type: String, required: true, lowercase: true, trim: true },
     password: { type: String, required: true },
-    birthdate: Date,
-    phone: { type: String, required: true },
     address: { type: String, required: true, trim: true },
+    voteNumber: Number
 }, {
     timestamps: true,
     versionKey: false
