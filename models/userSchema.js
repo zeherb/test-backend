@@ -7,7 +7,7 @@ const userSchema = new Schema({
     email: { type: String, required: true, lowercase: true, trim: true },
     password: { type: String, required: true },
     address: { type: String, required: true, trim: true },
-    voteNumber: Number
+    voteNumber: { type: Number, default: 5 }
 }, {
     timestamps: true,
     versionKey: false
